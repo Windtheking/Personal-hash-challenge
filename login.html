@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/estilo_registro.css">
+    <title>Login with hash</title>
+</head>
+<body>
+    <main>
+        <section id='section1'>
+            <div class = "">
+                <img id='img2' src="./assets/favicon.jpg" alt="logoriwi">
+                <h1>Admin Login to database</h1>
+                <form action="submit" id= "loginForm" method = "POST">
+                    <label for="">Usser Name</label>
+                    <input class="inputs" id = "input1" type="text" name="nombre" placeholder = "nombre usser" required>
+                    <label for="">Password</label>
+                    <input class="inputs" id = "input3" type="password" name = "correo" placeholder = "contraseña" required>
+                    <input type="checkbox" name="Show_password" id="Showoff">Show password</input>
+                    <br>
+                    <button class="inputs" id = "input4" type = "submit" value="Log in" name = "Enviar">Log in</button>
+                </form>
+            </div>
+        </section>
+        <section id="section2">
+            <img id='img1' src="./assets/imglogin.jpeg" alt="imglogin">
+        </section>
+
+    </main>
+    <script> 
+        document.getElementById("Showoff").addEventListener("click",() =>{
+            function myFunction(){
+                var DisplayPasword = document.getElementById("input3");
+                if (DisplayPasword.type === "password") {
+                    DisplayPasword.type = "text";
+                } else {
+                    DisplayPasword.type = "password";
+                }
+            }
+
+            myFunction()
+        })
+    </script>
+    <script type= "module" src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</body>
+</html>

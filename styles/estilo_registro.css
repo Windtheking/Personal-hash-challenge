@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Libertinus+Mono&family=Oswald:wght@200..700&display=swap');
+
+@keyframes emphasis{
+    0%{transform: scale(1.1);}
+    50%{transform: scale(1.2);}
+    100%{transform: scale(1.1);}
+}
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-self: center;
+    height: 100vh;
+    width: 150vh;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+	background: #8594e4;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 90%;
+    height: 90%;
+    border-radius: 3vh 3vh 3vh 3vh;
+}
+
+
+.theboton{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 1vh;
+}
+
+
+
+#section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh; 
+    height: 100%;
+    width: 40%;
+}
+
+#section1 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+#input1{ 
+    display: flex;
+    border: none;
+    gap: 1vh;
+    background-color:white;
+    width:30vh;
+    height: 5vh;
+    border-radius: 1vh;
+}
+
+
+
+
+#input3{ 
+    display: flex;
+    border: none;
+    gap: 1vh;
+    background-color:white;
+    width:30vh;
+    height: 5vh;
+    border-radius: 1vh;
+}
+
+#input4{ 
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    background-color:rgb(255, 255, 255);
+    width:30vh;
+    height: 4.5vh;
+    border-radius: 1vh ;
+}
+
+#input4:hover{
+    animation: emphasis 1.5s infinite ease;
+    background-color: black;
+    color: white;
+}
+
+#Showoff{
+    margin: 1vh;
+
+}
+
+.inputs{
+    margin: 1vh;
+    padding: 1vh;
+}
+
+#section2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+}
+
+#img1{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 3vh 3vh 0;
+}
+
+#img2{
+    display: flex;
+    height: 10%;
+}
+
+
+
